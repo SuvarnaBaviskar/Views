@@ -1,5 +1,6 @@
 package com.ani.login
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
@@ -8,6 +9,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.ani.login.databinding.ActivityMainBinding
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -38,5 +40,10 @@ class MainActivity : AppCompatActivity() {
 
             }
         })
+
+        btn_Next.setOnClickListener {
+            val intent:Intent=Intent(this,SecondActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

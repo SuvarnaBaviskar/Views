@@ -71,6 +71,18 @@
             android:onClick="@{() -> vm.login()}"
             />
 
+        <Button
+            android:id="@+id/btn_Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="144dp"
+            android:onClick="@{() -> vm.login()}"
+            android:text="Next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPass" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
