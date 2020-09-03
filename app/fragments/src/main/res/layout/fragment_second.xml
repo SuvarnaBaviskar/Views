@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment"
+    android:orientation="vertical"
+    >
+
+        <Button
+            android:id="@+id/bt_k"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Android"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android"
+            android:visibility="gone"
+            android:id="@+id/bt_magic"
+            android:layout_toRightOf="@+id/bt_k"
+            />
+
+        <SeekBar
+                    android:id="@+id/skBrRd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   android:max="255"
+                    android:layout_margin="20dp"
+                    >
+
+
+        </SeekBar>
+        <SeekBar
+            android:id="@+id/skBrGr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:layout_below="@+id/skBrRd"
+            android:layout_margin="20dp"
+            >
+
+
+        </SeekBar>
+        <SeekBar
+            android:id="@+id/skBrBl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:layout_below="@+id/skBrGr"
+            android:layout_margin="20dp"
+            >
+
+
+        </SeekBar>
+
+
+</RelativeLayout>
