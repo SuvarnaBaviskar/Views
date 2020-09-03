@@ -71,10 +71,6 @@ class ZoomFragment : Fragment() {
 
     }
 
-
-
-
-
         private inner class ScaleListener : ScaleGestureDetector.SimpleOnScaleGestureListener() {
 
         override fun onScale(scaleGestureDetector: ScaleGestureDetector): Boolean {
