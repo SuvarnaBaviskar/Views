@@ -21,18 +21,18 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+       // setContentView(R.layout.activity_main)
 
         DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main).apply {
             lifecycleOwner = this@MainActivity
             vm = viewModel
         }
 
-        viewModel.status.observe(this, Observer { status ->
-            status?.let {
+        viewModel.usNm.observe(this, Observer { usNm ->
+            usNm?.let {
                 //Reset status value at first to prevent multitriggering
                 //and to be available to trigger action again
-                viewModel.status.value = null
+               // viewModel.status.value = null
                 //Display Toast or snackbar
             val myToast = Toast.makeText(this,"toast message with gravity",Toast.LENGTH_SHORT)
             myToast.setGravity(Gravity.LEFT,200,200)
@@ -42,8 +42,7 @@ class MainActivity : AppCompatActivity() {
         })
 
         btn_Next.setOnClickListener {
-            val intent:Intent=Intent(this,SecondActivity::class.java)
-            startActivity(intent)
+
         }
     }
 }

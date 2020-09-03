@@ -1,3 +1,5 @@
+include ':app:fragmentslider'
+include ':app:fragments'
 include ':login'
 include ':app'
 rootProject.name = "Views"

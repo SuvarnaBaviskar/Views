@@ -1,7 +1,5 @@
 package com.example.views
 
-
-
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
